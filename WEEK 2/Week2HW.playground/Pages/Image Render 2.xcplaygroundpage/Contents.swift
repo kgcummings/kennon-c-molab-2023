@@ -33,3 +33,5 @@ let pic = renderer.image {(context) in
     context.fill(CGRect(x: 200, y: 0, width: 70, height: 50))
     
 }
+
+pic
