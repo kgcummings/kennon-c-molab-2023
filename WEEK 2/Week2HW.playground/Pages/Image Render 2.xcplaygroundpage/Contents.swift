@@ -27,5 +27,9 @@ let pic = renderer.image {(context) in
     context.fill(CGRect(x: 0, y: 175, width: 70, height: 100))
     UIColor(red: 0.08, green: 0.23, blue: 0.43, alpha: 1.00).setFill()
     context.fill(CGRect(x: 200, y: 50, width: 70, height: 60))
+    UIColor(red: 0.08, green: 0.23, blue: 0.43, alpha: 1.00).setFill()
+    context.fill(CGRect(x: 60, y: 175, width: 20, height: 80))
+    UIColor(red: 0.56, green: 0.43, blue: 0.38, alpha: 1.00).setFill()
+    context.fill(CGRect(x: 200, y: 0, width: 70, height: 50))
     
 }
