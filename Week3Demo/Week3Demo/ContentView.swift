@@ -50,7 +50,7 @@ struct ContentView: View {
                         Text(flowers.randomElement()!).font(.largeTitle)
                     }
                     
-                }.background(flowerbox.randomElement()!)
+                }.background(flowerbox.randomElement()!).cornerRadius(15)
                 
              Spacer()
           
