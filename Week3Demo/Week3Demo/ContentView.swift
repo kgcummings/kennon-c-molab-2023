@@ -14,6 +14,8 @@ import SwiftUI
 let flowers = ["🥀","🌼","🌻","🌸","🌹","🌺","🪷","🌷","💐","🪻","🐝","🌿","🌾"]
 
 let flowerboxname = ["peaceful","green","sunshiney","picturesque","springtime","lovely","delightful"]
+
+let flowerbox = [Color.green,Color.red, Color.yellow,Color(red: 0.3, green: 0.4, blue: 0.0, opacity: 1.0)]
 //let flowerpwr = Text(flowers.randomElement()!).font(.largeTitle)
 
 struct ContentView: View {
@@ -47,7 +49,8 @@ struct ContentView: View {
                         Text(flowers.randomElement()!).font(.largeTitle)
                         Text(flowers.randomElement()!).font(.largeTitle)
                     }
-                }
+                    
+                }.background(flowerbox.randomElement()!)
                 
              Spacer()
           
