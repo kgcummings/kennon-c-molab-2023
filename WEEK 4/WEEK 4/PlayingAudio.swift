@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 let audiow = [
-    "PIANO.wav","SOUND1.wav","meow.wav",
+    "PIANO.wav","SOUND1.wav","meow.wav","RAIN.wav",
 ]
 
 func playTheTunes(_ fileName:String) ->
@@ -65,13 +65,25 @@ struct PlayingAudio: View {
                     player = playTheTunes("meow.wav")
                     player?.play()
     }
+                Image(systemName: "cloud.bolt.rain")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width:100, height:100)
+                    
+                
+                Button("Evening Storm") {
+                    player?.stop()
+                    navPath.append( "a calming storm" )
+                    player = playTheTunes("RAIN.wav")
+                    player?.play()
+    }
                 Spacer()
             }
             
             .navigationTitle("The Music App")
             .background(Color.mint)
             .navigationDestination(for: String.self) { str in
-                Text("the sound of \(str)")
+                Text("the sound of \(str)...")
                     .background(Color.yellow)
             }
         }
