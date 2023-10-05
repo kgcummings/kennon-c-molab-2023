@@ -30,6 +30,9 @@ struct PlayingAudio: View {
         NavigationStack(path: $navPath){
             
             VStack {
+                Text("THE MUSIC ZONE")
+                    .font(.system(size: 36).weight(.bold))
+                    .multilineTextAlignment(.center)
                 Image(systemName: "pianokeys")
                     .resizable()
                     .scaledToFit()
@@ -80,8 +83,9 @@ struct PlayingAudio: View {
                 Spacer()
             }
             
-            .navigationTitle("The Music App")
-            .frame(width:180)
+          //  .navigationTitle("The Music App")
+            .background(Color.blue)
+            .frame(width:220)
             .foregroundStyle(Color.white)
             .background(Color.mint)
             .navigationDestination(for: String.self) { str in
