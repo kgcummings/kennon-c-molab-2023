@@ -81,6 +81,8 @@ struct PlayingAudio: View {
             }
             
             .navigationTitle("The Music App")
+            .frame(width:180)
+            .foregroundStyle(Color.white)
             .background(Color.mint)
             .navigationDestination(for: String.self) { str in
                 Text("the sound of \(str)...")
