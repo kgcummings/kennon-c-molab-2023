@@ -14,6 +14,7 @@
 		8D185DDA2ACE356E005055A1 /* SOUND1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D185DD92ACE356E005055A1 /* SOUND1.wav */; };
 		8D185DDC2ACE3C14005055A1 /* PIANO.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D185DDB2ACE3C14005055A1 /* PIANO.wav */; };
 		8D185DDE2ACE4D60005055A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D185DDD2ACE4D60005055A1 /* ContentView.swift */; };
+		8D185DFA2ACE5B2A005055A1 /* meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D185DF92ACE5B2A005055A1 /* meow.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8D185DD92ACE356E005055A1 /* SOUND1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = SOUND1.wav; path = ../../../../../Desktop/PERSONAL/SOUND1.wav; sourceTree = "<group>"; };
 		8D185DDB2ACE3C14005055A1 /* PIANO.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PIANO.wav; path = ../../../../../Downloads/PIANO.wav; sourceTree = "<group>"; };
 		8D185DDD2ACE4D60005055A1 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../../Desktop/ContentView.swift; sourceTree = "<group>"; };
+		8D185DF92ACE5B2A005055A1 /* meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = meow.wav; path = ../../../../../Downloads/meow.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				8D185DC92ACE344B005055A1 /* WEEK_4App.swift */,
 				8D185DD72ACE34E5005055A1 /* PlayingAudio.swift */,
+				8D185DF92ACE5B2A005055A1 /* meow.wav */,
 				8D185DDD2ACE4D60005055A1 /* ContentView.swift */,
 				8D185DD92ACE356E005055A1 /* SOUND1.wav */,
 				8D185DDB2ACE3C14005055A1 /* PIANO.wav */,
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D185DFA2ACE5B2A005055A1 /* meow.wav in Resources */,
 				8D185DD12ACE344C005055A1 /* Preview Assets.xcassets in Resources */,
 				8D185DDA2ACE356E005055A1 /* SOUND1.wav in Resources */,
 				8D185DCE2ACE344C005055A1 /* Assets.xcassets in Resources */,
