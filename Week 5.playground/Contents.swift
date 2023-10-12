@@ -200,3 +200,5 @@ print(dOnly) //picking out specifics
 
 let uppercaseTeam = team.map { $0.uppercased() }
 print(uppercaseTeam) //changing aspects of array
+
+// accepting functions as parameters
