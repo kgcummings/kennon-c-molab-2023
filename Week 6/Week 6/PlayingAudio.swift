@@ -35,6 +35,11 @@ struct PlayingAudio: View {
                     .multilineTextAlignment(.center)
 // BUTTON ZONE
 // REFERENCE: https://sarunw.com/posts/swiftui-image-button/ , WEEK 6 UPDATE: ADDED IMAGES TO LINK INSTEAD OF BEING STAGNANT
+               // List{
+                    
+                 
+            //    }
+                
                 Button(action: {
                     player?.stop()
                     navPath.append( "piano" )
@@ -103,10 +108,19 @@ struct PlayingAudio: View {
                 .background(Color.blue)
                 .frame(width:330)
                 .foregroundStyle(Color.white)
-                .background(Color.mint)
+                .background(Color.pink)
                 .navigationBarTitle("The Music Zone")
-                .navigationBarItems(trailing: EditButton())
-                .toolbarBackground(Color.mint, for: .navigationBar)
+                .navigationBarItems(
+                    trailing:
+                        NavigationLink(
+                            destination:
+                                newImage()
+                        )
+                    {
+                        Text("Add Sound")
+                    }
+                )
+                .toolbarBackground(Color.gray, for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
                 .navigationDestination(for: String.self) { str in
                     Text("the sound of \(str)...")

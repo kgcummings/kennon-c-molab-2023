@@ -15,6 +15,7 @@
 		8D1BA35A2AE0C80B001023BD /* PIANO.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D1BA3562AE0C80B001023BD /* PIANO.wav */; };
 		8D1BA35B2AE0C80B001023BD /* RAIN.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D1BA3572AE0C80B001023BD /* RAIN.wav */; };
 		8D1BA35C2AE0C80B001023BD /* meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8D1BA3582AE0C80B001023BD /* meow.wav */; };
+		8D1BA35E2AE0D11C001023BD /* newImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1BA35D2AE0D11C001023BD /* newImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8D1BA3562AE0C80B001023BD /* PIANO.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PIANO.wav; path = "Week 6/Resources/PIANO.wav"; sourceTree = SOURCE_ROOT; };
 		8D1BA3572AE0C80B001023BD /* RAIN.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = RAIN.wav; path = "Week 6/Resources/RAIN.wav"; sourceTree = SOURCE_ROOT; };
 		8D1BA3582AE0C80B001023BD /* meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = meow.wav; path = "Week 6/Resources/meow.wav"; sourceTree = SOURCE_ROOT; };
+		8D1BA35D2AE0D11C001023BD /* newImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				8D1BA3572AE0C80B001023BD /* RAIN.wav */,
 				8D1BA3552AE0C80B001023BD /* SOUND1.wav */,
 				8D1BA34E2AE0C76B001023BD /* Preview Assets.xcassets */,
+				8D1BA35D2AE0D11C001023BD /* newImage.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1BA35E2AE0D11C001023BD /* newImage.swift in Sources */,
 				8D1BA34A2AE0C76A001023BD /* PlayingAudio.swift in Sources */,
 				8D1BA3482AE0C76A001023BD /* Week_6App.swift in Sources */,
 			);
