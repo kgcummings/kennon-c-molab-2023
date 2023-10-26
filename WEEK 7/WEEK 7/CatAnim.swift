@@ -6,11 +6,35 @@
 //
 
 import SwiftUI
+import Foundation
 
 let frames = ["01","02","03","04"]
 let sleep = "sleepy.png"
 //var speed = 0.25
 
+// for SwiftUI to react to changes in speed,
+//  use an ObservableObject Model class
+class Model: ObservableObject {
+    @Published var speed = 0.25
+
+    // Strange: can't declare clock using type
+    // var clock: Publishers.Autoconnect<Timer.TimerPublisher>
+    var clock = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
+    
+    init(speed:Double) {
+        self.speed = speed;
+        updateSpeed(by: 0)
+    }
+    
+    func updateSpeed(by delta: Double) {
+        print("Model updateSpeed speed", speed)
+        speed += delta;
+        if speed < 0 {
+            speed = 0;
+        }
+        clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
+    }
+}
 let backgroundGradient = LinearGradient(
     colors: [Color("bgColor")],
     startPoint: .top, endPoint: .bottom)
@@ -28,27 +52,10 @@ struct SlideView: View {
 
 
 struct CatAnim: View {
-    @State var speed = 0.25
+    @StateObject var model = Model(speed: 0.5);
     @State var slideIndex = 0
     @State var isPlaying = false
-    
-    // init var to get required type
-    // note: no reference to speed property
-    var clock = Timer.publish(every: 0, on: .main, in: .common).autoconnect()
-    
-//    var clock: Publishers.Autoconnect<Timer.TimerPublisher>
-    
-//    lazy var clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
-// !!@ Not allowed
-    
-//    var clock: Publishers.Autoconnect<Timer.TimerPublisher>
-// !!@ extracted type not found
-    
-    init() {
-        // Use speed property here init clock var
-        clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
-    }
-    
+        
     @EnvironmentObject var audioDJ:AudioDJ;
     
     var body: some View {
@@ -57,14 +64,14 @@ struct CatAnim: View {
                 .font(.largeTitle)
             .foregroundColor(.textcolor)
             
-            Text("Current Speed:") + Text(" \(speed)").foregroundStyle(.red)
+            Text("Current Speed:") + Text(" \(model.speed)").foregroundStyle(.red)
             let name = frames[slideIndex]
             SlideView(name: name)
             //Image("sleepy")
             HStack {
                 Spacer()
                 Button(action: {
-                    speed += 0.05
+                    model.updateSpeed(by: 0.05);
                 }){
                     Image(systemName: "tortoise")
                         .resizable()
@@ -80,7 +87,7 @@ struct CatAnim: View {
                 }.padding()
                 Spacer()
                 Button(action: {
-                    speed -= 0.05
+                    model.updateSpeed(by: -0.05);
                 }){
                     Image(systemName: "hare")
                         .resizable()
@@ -90,7 +97,7 @@ struct CatAnim: View {
                 Spacer()
             }
         } .background(backgroundGradient)
-        .onReceive(clock) { _ in
+            .onReceive( model.clock) { _ in
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-a-timer-with-swiftui ?
             if (isPlaying) {
                 nextItemAction()
