@@ -9,7 +9,7 @@ import SwiftUI
 
 let frames = ["01","02","03","04"]
 let sleep = "sleepy.png"
-var speed = 0.25
+//var speed = 0.25
 
 let backgroundGradient = LinearGradient(
     colors: [Color("bgColor")],
@@ -28,10 +28,27 @@ struct SlideView: View {
 
 
 struct CatAnim: View {
+    @State var speed = 0.25
     @State var slideIndex = 0
     @State var isPlaying = false
     
-    var clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
+    // init var to get required type
+    // note: no reference to speed property
+    var clock = Timer.publish(every: 0, on: .main, in: .common).autoconnect()
+    
+//    var clock: Publishers.Autoconnect<Timer.TimerPublisher>
+    
+//    lazy var clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
+// !!@ Not allowed
+    
+//    var clock: Publishers.Autoconnect<Timer.TimerPublisher>
+// !!@ extracted type not found
+    
+    init() {
+        // Use speed property here init clock var
+        clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
+    }
+    
     @EnvironmentObject var audioDJ:AudioDJ;
     
     var body: some View {
@@ -105,3 +122,7 @@ struct PlayPause_Previews: PreviewProvider {
             .environmentObject(AudioDJ())
     }
 }
+
+// to init interdependent struct properties:
+// https://developer.apple.com/forums/thread/128366
+
