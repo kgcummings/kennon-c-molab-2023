@@ -40,7 +40,7 @@ struct CatAnim: View {
                 .font(.largeTitle)
             .foregroundColor(.textcolor)
             
-            Text("Current Speed: \(speed)")
+            Text("Current Speed:") + Text(" \(speed)").foregroundStyle(.red)
             let name = frames[slideIndex]
             SlideView(name: name)
             //Image("sleepy")
