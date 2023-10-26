@@ -47,7 +47,7 @@ struct CatAnim: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    speed += 0.1
+                    speed += 0.05
                 }){
                     Image(systemName: "tortoise")
                         .resizable()
@@ -63,7 +63,7 @@ struct CatAnim: View {
                 }.padding()
                 Spacer()
                 Button(action: {
-                    speed -= 0.1
+                    speed -= 0.05
                 }){
                     Image(systemName: "hare")
                         .resizable()
