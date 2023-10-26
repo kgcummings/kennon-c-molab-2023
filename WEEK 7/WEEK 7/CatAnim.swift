@@ -9,6 +9,8 @@ import SwiftUI
 
 let frames = ["01","02","03","04"]
 let sleep = "sleepy.png"
+var speed = 0.25
+
 let backgroundGradient = LinearGradient(
     colors: [Color("bgColor")],
     startPoint: .top, endPoint: .bottom)
@@ -29,7 +31,7 @@ struct CatAnim: View {
     @State var slideIndex = 0
     @State var isPlaying = false
     
-    let clock = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
+    var clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
     @EnvironmentObject var audioDJ:AudioDJ;
     
     var body: some View {
@@ -38,32 +40,37 @@ struct CatAnim: View {
                 .font(.largeTitle)
             .foregroundColor(.textcolor)
             
+            Text("Current Speed: \(speed)")
             let name = frames[slideIndex]
             SlideView(name: name)
             //Image("sleepy")
             HStack {
-                Button(action: previousItemAction) {
-                    Image(systemName: "arrowshape.left")
+                Spacer()
+                Button(action: {
+                    speed += 0.1
+                }){
+                    Image(systemName: "tortoise")
                         .resizable()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 45, height: 50)
                         .foregroundColor(.textcolor)
-                }
-                .padding()
+                }.padding()
                 Spacer()
                 Button(action: playPauseAction) {
                     Image(systemName: isPlaying ? "pause" : "play")
                         .resizable()
                         .frame(width: 50, height: 50)
                         .foregroundColor(.textcolor)
-                }
+                }.padding()
                 Spacer()
-                Button(action: nextItemAction) {
-                    Image(systemName: "arrowshape.right")
+                Button(action: {
+                    speed -= 0.1
+                }){
+                    Image(systemName: "hare")
                         .resizable()
                         .frame(width: 50, height: 50)
                         .foregroundColor(.textcolor)
                 }
-                .padding()
+                Spacer()
             }
         } .background(backgroundGradient)
         .onReceive(clock) { _ in
