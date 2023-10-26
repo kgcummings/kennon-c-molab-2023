@@ -74,6 +74,7 @@ struct CatAnim: View {
             }
         } .background(backgroundGradient)
         .onReceive(clock) { _ in
+        //https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-a-timer-with-swiftui ?
             if (isPlaying) {
                 nextItemAction()
             }
