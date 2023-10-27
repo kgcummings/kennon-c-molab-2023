@@ -7,9 +7,13 @@
 
 import SwiftUI
 import Foundation
+// import needed to define Publishers
+import Combine
 
 let frames = ["01","02","03","04"]
 let sleep = "sleepy.png"
+// Avoid crash for very small every: values
+let speedMin = 0.0001
 //var speed = 0.25
 
 // for SwiftUI to react to changes in speed,
@@ -17,24 +21,25 @@ let sleep = "sleepy.png"
 class Model: ObservableObject {
     @Published var speed = 0.25
 
-    // Strange: can't declare clock using type
-    // var clock: Publishers.Autoconnect<Timer.TimerPublisher>
-    var clock = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
+    var clock: Publishers.Autoconnect<Timer.TimerPublisher>
+    // can't declare clock using type without import
+    // var clock = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
     
-    init(speed:Double) {
-        self.speed = speed;
-        updateSpeed(by: 0)
+    init(speed nspeed:Double) {
+        speed = nspeed;
+        clock = Timer.publish(every: nspeed, on: .main, in: .common).autoconnect()
     }
     
     func updateSpeed(by delta: Double) {
         print("Model updateSpeed speed", speed)
         speed += delta;
-        if speed < 0 {
-            speed = 0;
+        if speed <= speedMin {
+            speed = speedMin;
         }
         clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
     }
 }
+
 let backgroundGradient = LinearGradient(
     colors: [Color("bgColor")],
     startPoint: .top, endPoint: .bottom)

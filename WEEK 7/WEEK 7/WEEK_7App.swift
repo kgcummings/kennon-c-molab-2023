@@ -12,6 +12,7 @@ struct WEEK_7App: App {
     var body: some Scene {
         WindowGroup {
             CatAnim()
+                .environmentObject(AudioDJ())
         }
     }
 }
