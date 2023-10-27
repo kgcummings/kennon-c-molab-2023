@@ -12,6 +12,7 @@ import Combine
 
 let frames = ["01","02","03","04"]
 let sleep = "sleepy.png"
+
 // Avoid crash for very small every: values
 let speedMin = 0.0001
 //var speed = 0.25
@@ -20,7 +21,7 @@ let speedMin = 0.0001
 //  use an ObservableObject Model class
 class Model: ObservableObject {
     @Published var speed = 0.25
-
+    
     var clock: Publishers.Autoconnect<Timer.TimerPublisher>
     // can't declare clock using type without import
     // var clock = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
@@ -60,14 +61,14 @@ struct CatAnim: View {
     @StateObject var model = Model(speed: 0.5);
     @State var slideIndex = 0
     @State var isPlaying = false
-        
+    
     @EnvironmentObject var audioDJ:AudioDJ;
     
     var body: some View {
         VStack{
             Text("Watch him go!")
                 .font(.largeTitle)
-            .foregroundColor(.textcolor)
+                .foregroundColor(.textcolor)
             
             Text("Current Speed:") + Text(" \(model.speed)").foregroundStyle(.red)
             let name = frames[slideIndex]
@@ -103,11 +104,10 @@ struct CatAnim: View {
             }
         } .background(backgroundGradient)
             .onReceive( model.clock) { _ in
-        //https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-a-timer-with-swiftui ?
-            if (isPlaying) {
-                nextItemAction()
+                if (isPlaying) {
+                    nextItemAction()
+                }
             }
-        }
     }
     
     func playPauseAction() {
@@ -135,6 +135,11 @@ struct PlayPause_Previews: PreviewProvider {
     }
 }
 
-// to init interdependent struct properties:
-// https://developer.apple.com/forums/thread/128366
+// https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-a-timer-with-swiftui ?
+// tutorial for Timer.publish and .onReceive( model.clock)
 
+// https://developer.apple.com/forums/thread/128366
+// to init interdependent struct properties:
+
+// https://developer.apple.com/documentation/swiftui/stateobject#Initialize-state-objects-using-external-data
+// Initialize state objects using external data
