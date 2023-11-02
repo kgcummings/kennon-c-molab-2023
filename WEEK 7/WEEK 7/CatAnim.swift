@@ -44,9 +44,11 @@ struct CatAnim: View {
 //    var clock: Publishers.Autoconnect<Timer.TimerPublisher>
 // !!@ extracted type not found
     
+    // !!@ DOES NOT Update. Need model 
     init() {
         // Use speed property here init clock var
         clock = Timer.publish(every: speed, on: .main, in: .common).autoconnect()
+        print("CatAnim init");
     }
     
     @EnvironmentObject var audioDJ:AudioDJ;
