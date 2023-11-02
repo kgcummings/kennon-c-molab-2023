@@ -102,12 +102,13 @@ struct CatAnim: View {
                 }
                 Spacer()
             }
-        } .background(backgroundGradient)
-            .onReceive( model.clock) { _ in
-                if (isPlaying) {
-                    nextItemAction()
-                }
+        } 
+        .background(backgroundGradient)
+        .onReceive( model.clock) { _ in
+            if (isPlaying) {
+                nextItemAction()
             }
+        }
     }
     
     func playPauseAction() {
