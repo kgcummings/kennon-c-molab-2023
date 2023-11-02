@@ -41,22 +41,6 @@ class Model: ObservableObject {
     }
 }
 
-let backgroundGradient = LinearGradient(
-    colors: [Color("bgColor")],
-    startPoint: .top, endPoint: .bottom)
-
-struct SlideView: View {
-    var name:String
-    var body: some View {
-        VStack {
-            Image(name)
-                .resizable()
-            Text(name)
-        }
-    }
-}
-
-
 struct CatAnim: View {
     @StateObject var model = Model(speed: 0.5);
     @State var slideIndex = 0
@@ -102,7 +86,7 @@ struct CatAnim: View {
                 }
                 Spacer()
             }
-        } 
+        }
         .background(backgroundGradient)
         .onReceive( model.clock) { _ in
             if (isPlaying) {
@@ -133,6 +117,21 @@ struct PlayPause_Previews: PreviewProvider {
     static var previews: some View {
         CatAnim()
             .environmentObject(AudioDJ())
+    }
+}
+
+let backgroundGradient = LinearGradient(
+    colors: [Color("bgColor")],
+    startPoint: .top, endPoint: .bottom)
+
+struct SlideView: View {
+    var name:String
+    var body: some View {
+        VStack {
+            Image(name)
+                .resizable()
+            Text(name)
+        }
     }
 }
 
