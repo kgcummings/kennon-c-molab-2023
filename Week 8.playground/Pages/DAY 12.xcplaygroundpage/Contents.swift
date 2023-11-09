@@ -114,4 +114,7 @@ print(user2.username)
 
 // they all change at once! not a bug, but a feature-- sharing common data in multiple parts!
 
+// HOW TO CREATE DEINITIALIZERS FOR A CLASS
 
+// deinitials dont exist with functions or structs! and have NO ()!! they run when every class instance is destroyed, and cannot be called directly!
+// scope - context where info is available! local scopes.... 
