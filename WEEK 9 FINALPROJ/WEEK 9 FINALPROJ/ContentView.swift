@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var fallScore = 0
     @State private var winterScore = 0
     
+    var buttonColors: [Color] = [.green,.orange, .pink, .blue]
+    
     var body: some View {
         ZStack{
             VStack(spacing: 0){
@@ -26,16 +28,16 @@ struct ContentView: View {
 
                 Button("Cozy up by a fire!", action: fallAnswer)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(buttonColors.randomElement())
                 Button("Pick some flowers...", action: springAnswer)
                     .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    .tint(buttonColors.randomElement())
                 Button("Get a tan!", action: summerAnswer)
                     .buttonStyle(.borderedProminent)
-                    .tint(.orange)
+                    .tint(buttonColors.randomElement())
                 Button("Drink a hot beverage.", action: winterAnswer)
                     .buttonStyle(.borderedProminent)
-                    .tint(.pink)
+                    .tint(buttonColors.randomElement())
             }
             
         }
