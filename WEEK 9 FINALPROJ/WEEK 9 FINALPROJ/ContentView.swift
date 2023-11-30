@@ -38,7 +38,9 @@ struct ContentView: View {
                 Button("Drink a hot beverage.", action: winterAnswer)
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
-            }
+            }.padding(30)
+            .background(.white .opacity(0.5))
+            .cornerRadius(15)
             
         }
         .ignoresSafeArea()
