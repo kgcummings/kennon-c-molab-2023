@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+// DEC 7 RESEARCH:
+// https://www.youtube.com/watch?v=Bobaqb9Mno0&t=76s - figuring out how to transfer pages without a navigation bar
+// https://www.youtube.com/watch?v=b55npVkqa5U&t=1643s - figuring out proper way to transfer between questions
+// https://www.youtube.com/watch?v=_U833RUUHG4&t=152s - color asset refresher
 
 struct ContentView: View {
-    @State private var springScore = 0
-    @State private var summerScore = 0
-    @State private var fallScore = 0
-    @State private var winterScore = 0
+    
+    @StateObject var seasonScores = SeasonScores()
     
     var buttonColors: [Color] = [.green,.orange, .pink, .blue]
     
@@ -21,56 +23,30 @@ struct ContentView: View {
             VStack(spacing: 0){
                 LinearGradient(stops: [
                     Gradient.Stop(color:.white, location: 0.20),
-                    Gradient.Stop(color: .blue, location: 0.75)], startPoint: .top, endPoint: .bottom)
+                    Gradient.Stop(color: .blue, location: 0.85)], startPoint: .top, endPoint: .bottom)
             }
             VStack{
                 Image(systemName: "leaf.fill")
-
-                Button("Cozy up by a fire!", action: fallAnswer)
+                        Button("Cozy up by a fire!", action: seasonScores.fallAnswer)
+                            .buttonStyle(.borderedProminent)
+                            .tint(buttonColors.randomElement())
+                Button("Pick some flowers...", action: seasonScores.springAnswer)
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
-                Button("Pick some flowers...", action: springAnswer)
+                Button("Get a tan!", action: seasonScores.summerAnswer)
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
-                Button("Get a tan!", action: summerAnswer)
-                    .buttonStyle(.borderedProminent)
-                    .tint(buttonColors.randomElement())
-                Button("Drink a hot beverage.", action: winterAnswer)
+                Button("Drink a hot beverage.", action: seasonScores.winterAnswer)
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
             }.padding(30)
-            .background(.white .opacity(0.5))
+                .background(Color("BGCol") .opacity(0.5))
             .cornerRadius(15)
             
         }
         .ignoresSafeArea()
         
     }
-
-
-    func springAnswer() {
-           print("Spring!")
-        springScore += 1
-        print(springScore)
-       }
-    
-    func summerAnswer() {
-           print("Summer!")
-        summerScore += 1
-        print(summerScore)
-       }
-    
-    func fallAnswer() {
-           print("Fall!")
-        fallScore += 1
-        print(fallScore)
-       }
-
-    func winterAnswer() {
-           print("Winter!")
-        winterScore += 1
-        print(winterScore)
-       }
 }
 
 #Preview {

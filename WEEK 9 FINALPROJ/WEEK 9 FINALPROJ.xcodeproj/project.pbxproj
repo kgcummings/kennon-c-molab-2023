@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1381A92B219CEB00462445 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1381A82B219CEB00462445 /* ViewTwo.swift */; };
+		8D41E2BA2B18ED5D00BD03AB /* SeasonScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41E2B92B18ED5D00BD03AB /* SeasonScores.swift */; };
 		8DFE467B2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE467A2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift */; };
 		8DFE467D2AFAC3FE00785F46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE467C2AFAC3FE00785F46 /* ContentView.swift */; };
 		8DFE467F2AFAC3FF00785F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFE467E2AFAC3FF00785F46 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D1381A82B219CEB00462445 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
+		8D41E2B92B18ED5D00BD03AB /* SeasonScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonScores.swift; sourceTree = "<group>"; };
 		8DFE46772AFAC3FE00785F46 /* WEEK 9 FINALPROJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WEEK 9 FINALPROJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFE467A2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEEK_9_FINALPROJApp.swift; sourceTree = "<group>"; };
 		8DFE467C2AFAC3FE00785F46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				8DFE467A2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift */,
 				8DFE467C2AFAC3FE00785F46 /* ContentView.swift */,
+				8D1381A82B219CEB00462445 /* ViewTwo.swift */,
+				8D41E2B92B18ED5D00BD03AB /* SeasonScores.swift */,
 				8DFE467E2AFAC3FF00785F46 /* Assets.xcassets */,
 				8DFE46802AFAC3FF00785F46 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D41E2BA2B18ED5D00BD03AB /* SeasonScores.swift in Sources */,
+				8D1381A92B219CEB00462445 /* ViewTwo.swift in Sources */,
 				8DFE467D2AFAC3FE00785F46 /* ContentView.swift in Sources */,
 				8DFE467B2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift in Sources */,
 			);
