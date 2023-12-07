@@ -12,6 +12,7 @@ struct WEEK_9_FINALPROJApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(SeasonScores())
         }
     }
 }
