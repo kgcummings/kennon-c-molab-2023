@@ -9,14 +9,22 @@ import SwiftUI
 
 struct homeView: View {
     var body: some View {
-        VStack{
-            Spacer()
-            Text("Welcome to the seasons personality quiz!!")
-            Divider()
-            Spacer()
-        }.padding(30)
-        .cornerRadius(15)
-        .background(.linearGradient(colors: [.blue,.green,.yellow, .red], startPoint: .top, endPoint: .bottom))
+        NavigationView{
+            VStack(spacing: 40){
+                VStack(spacing:20){
+                    Text("Welcome to the seasons personality quiz!!")
+                }
+                
+                NavigationLink {
+                    ViewOne()
+                } label: {
+                    Text("Press this!")
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .edgesIgnoringSafeArea(.all)
+            .background(.linearGradient(colors: [.blue,.green,.yellow, .red], startPoint: .top, endPoint: .bottom))
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

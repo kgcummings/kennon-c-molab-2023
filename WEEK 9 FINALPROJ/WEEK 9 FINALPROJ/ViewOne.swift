@@ -21,6 +21,7 @@ struct ViewOne: View {
                     Gradient.Stop(color: .blue, location: 0.85)], startPoint: .top, endPoint: .bottom)
             }
             VStack{
+                
                 Image(systemName: "leaf.fill")
                     Button("Cozy up by a fire!", action: seasonScores.fallAnswer)
                         .buttonStyle(.borderedProminent)
@@ -37,6 +38,7 @@ struct ViewOne: View {
             }.padding(30)
                 .background(Color("BGCol") .opacity(0.5))
             .cornerRadius(15)
+            .navigationBarBackButtonHidden(true)
             
         }
         .ignoresSafeArea()
