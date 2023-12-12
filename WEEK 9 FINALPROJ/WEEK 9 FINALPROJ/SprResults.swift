@@ -15,9 +15,9 @@ struct SprResults: View {
     var body: some View {
         VStack {
             Text("Spring")
-            // Text("You scored \(SeasonScores.springScore) Spring answers!")
+           //  Text("You scored \(seasonScores.springScore) Spring answers!")
                 .font(
-                    Font.custom("Kanit", size: 96)
+                    Font.custom("Kanit", size: 86)
                         .italic()
                 )
                 .foregroundColor(Color(red: 0.01, green: 0.45, blue: 0.16))

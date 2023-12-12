@@ -39,6 +39,8 @@ struct ContentView: View {
                     Label("Third", systemImage:"leaf")
                 }
                 
+            SprResults()
+                .tabItem { Label("Results", systemImage:"sun") }
         }.background(.white)
         }
     }

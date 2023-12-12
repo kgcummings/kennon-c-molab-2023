@@ -37,31 +37,36 @@ struct ViewOne: View {
                     
                     
                
-                        Button("Pick some flowers...", action: seasonScores.springAnswer)
-                            .buttonStyle(.borderedProminent)
-                            .tint(buttonColors.randomElement())
+                        Button("Pick some flowers...",   
+                               action:
+                                {
+                            seasonScores.springAnswer()
+                            navPath.append(1)
+                        })
+                        .buttonStyle(.borderedProminent)
+                        .tint(buttonColors.randomElement())
                     
                     
                     
-                        Button("Get a tan!", action: seasonScores.summerAnswer)
-                            .buttonStyle(.borderedProminent)
-                            .tint(buttonColors.randomElement())
+                        Button("Get a tan!",
+                               action:
+                                {
+                            seasonScores.summerAnswer()
+                            navPath.append(1)
+                        })
+                        .buttonStyle(.borderedProminent)
+                        .tint(buttonColors.randomElement())
                         
                 
                    
-                        Button("Drink a hot beverage.", action: seasonScores.winterAnswer)
-                            .buttonStyle(.borderedProminent)
-                            .tint(buttonColors.randomElement())
-                
-                    
-                    VStack {
-                        Button(action: seasonScores.winterAnswer, label: {
-                            NavigationLink(destination: ViewTwo()) {
-                                Text("Next Question")
-                            }
+                        Button("Drink a hot beverage.",
+                               action:
+                                {
+                            seasonScores.winterAnswer()
+                            navPath.append(1)
                         })
-                        
-                    }.navigationBarBackButtonHidden(true)
+                        .buttonStyle(.borderedProminent)
+                        .tint(buttonColors.randomElement())
                     
                 }.padding(30)
                     .background(Color(.white) .opacity(0.5))
