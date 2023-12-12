@@ -8,10 +8,10 @@
 import Foundation
 
 class SeasonScores: ObservableObject {
-    @Published private var springScore = 0
-    @Published  private var summerScore = 0
-    @Published private var fallScore = 0
-    @Published private var winterScore = 0
+    @Published var springScore = 0
+    @Published var summerScore = 0
+    @Published var fallScore = 0
+    @Published var winterScore = 0
     
     init() {
         print("SeasonScores init")

@@ -10,18 +10,12 @@ import SwiftUI
 struct ViewTwo: View {
     
 @EnvironmentObject var seasonScores : SeasonScores
-    
 var buttonColors: [Color] = [.green,.orange, .pink, .blue]
     
     var body: some View {
         ZStack{
-            VStack(spacing: 0){
-                LinearGradient(stops: [
-                    Gradient.Stop(color:.white, location: 0.20),
-                    Gradient.Stop(color: .green, location: 0.85)], startPoint: .top, endPoint: .bottom)
-            }
             VStack{
-                Image(systemName: "moon")
+                Image(systemName: "moon.fill")
                 Text("What animal do you like most?")
                 
                         Button("Cats!", action: seasonScores.fallAnswer)
@@ -40,12 +34,23 @@ var buttonColors: [Color] = [.green,.orange, .pink, .blue]
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
                 
+                VStack {
+                    Button(action: {}, label: {
+                        NavigationLink(destination: ViewThree()) {
+                             Text("Next Question")
+                         }
+                    })
+                }
+                
             }.padding(30)
                 .background(Color("BGCol") .opacity(0.5))
             .cornerRadius(15)
             
         }
         .ignoresSafeArea()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
+        .background(.linearGradient(colors: [.pink,.blue,.mint], startPoint: .top, endPoint: .bottom))
         
     }
 }

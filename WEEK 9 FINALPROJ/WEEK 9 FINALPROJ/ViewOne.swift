@@ -14,34 +14,71 @@ struct ViewOne: View {
     var buttonColors: [Color] = [.green,.orange, .pink, .blue]
     
     var body: some View {
-        ZStack{
-            VStack(spacing: 0){
-                LinearGradient(stops: [
-                    Gradient.Stop(color:.white, location: 0.20),
-                    Gradient.Stop(color: .blue, location: 0.85)], startPoint: .top, endPoint: .bottom)
-            }
+        NavigationStack(path: $navPath) {
             VStack{
-                
-                Image(systemName: "leaf.fill")
-                    Button("Cozy up by a fire!", action: seasonScores.fallAnswer)
+                VStack{
+                    
+                   // Button("Jump to random") {
+                     //   navPath.append(1)
+                 //   }
+                    Text("What's the best way to wind down after a busy day?")
+                        .italic()
+                        .frame(width:250)
+                        .multilineTextAlignment(.center)
+              
+                        Button("Cozy up by a fire!",
+                               action:
+                                {
+                            seasonScores.fallAnswer()
+                            navPath.append(1)
+                        })
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
-                Button("Pick some flowers...", action: seasonScores.springAnswer)
-                    .buttonStyle(.borderedProminent)
-                    .tint(buttonColors.randomElement())
-                Button("Get a tan!", action: seasonScores.summerAnswer)
-                    .buttonStyle(.borderedProminent)
-                    .tint(buttonColors.randomElement())
-                Button("Drink a hot beverage.", action: seasonScores.winterAnswer)
-                    .buttonStyle(.borderedProminent)
-                    .tint(buttonColors.randomElement())
-            }.padding(30)
-                .background(Color("BGCol") .opacity(0.5))
-            .cornerRadius(15)
-            .navigationBarBackButtonHidden(true)
+                    
+                    
+               
+                        Button("Pick some flowers...", action: seasonScores.springAnswer)
+                            .buttonStyle(.borderedProminent)
+                            .tint(buttonColors.randomElement())
+                    
+                    
+                    
+                        Button("Get a tan!", action: seasonScores.summerAnswer)
+                            .buttonStyle(.borderedProminent)
+                            .tint(buttonColors.randomElement())
+                        
+                
+                   
+                        Button("Drink a hot beverage.", action: seasonScores.winterAnswer)
+                            .buttonStyle(.borderedProminent)
+                            .tint(buttonColors.randomElement())
+                
+                    
+                    VStack {
+                        Button(action: seasonScores.winterAnswer, label: {
+                            NavigationLink(destination: ViewTwo()) {
+                                Text("Next Question")
+                            }
+                        })
+                        
+                    }.navigationBarBackButtonHidden(true)
+                    
+                }.padding(30)
+                    .background(Color(.white) .opacity(0.5))
+                    .cornerRadius(15)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .edgesIgnoringSafeArea(.all)
+            .background(.linearGradient(colors: [.white,.blue,.purple], startPoint: .top, endPoint: .bottom))
             
-        }
-        .ignoresSafeArea()
+            .navigationDestination(for: Int.self) { i in
+                ViewTwo()
+            }
+        }.navigationViewStyle(StackNavigationViewStyle())
+            .ignoresSafeArea()
+        
+        
+        
         
     }
 }
