@@ -15,14 +15,16 @@ struct Begin: View {
             VStack(spacing: 40){
                 VStack(spacing:20){
                     Text("Welcome to the seasons personality quiz!!")
-                        .font(.largeTitle)
+                        .font(.custom("Sniglet-Regular", size: 55))
                         .multilineTextAlignment(.center)
+                      //  .frame(width:400)
                 }
                 
                 NavigationLink {
                     Q1()
                 } label: {
                     Text("Press this!")
+                        .font(.custom("Preahvihear-Regular", size: 15))
                         .padding()
                           .background(.red)
                           .foregroundStyle(.white)

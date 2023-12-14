@@ -17,31 +17,32 @@ struct Q3: View {
         NavigationStack {
             VStack{
                 VStack{
-                    Image(systemName: "leaf.fill")
-                    Text("What's the best way to wind down after a busy day?")
+                //    Image(systemName: "leaf.fill")
+                    Text("What do you value most in a friend?")
+                        .font(.custom("Preahvihear-Regular", size: 18))
                         .frame(width:200)
                         .multilineTextAlignment(.center)
                     
-                    Button("Cozy up by a fire!", action: seasonScores.fallAnswer)
+                    Button("Thoughtfulness.", action: seasonScores.winterAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
                     
                     
-                    Button("Pick some flowers...", action: seasonScores.springAnswer)
+                    Button("A keen mind.", action: seasonScores.fallAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
                     
                     
-                    Button("Get a tan!", action: seasonScores.summerAnswer)
+                    Button("Adaptability!", action: seasonScores.springAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
                     
                     
                     
-                    Button("Drink a hot beverage.", action: seasonScores.winterAnswer)
+                    Button("A good sense of humor!", action: seasonScores.summerAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     

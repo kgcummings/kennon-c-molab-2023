@@ -19,7 +19,7 @@ struct Q1: View {
                 VStack{
                     
                     Text("What's the best way to wind down after a busy day?")
-                        .italic()
+                        .font(.custom("Preahvihear-Regular", size: 18))
                         .frame(width:250)
                         .multilineTextAlignment(.center)
                     

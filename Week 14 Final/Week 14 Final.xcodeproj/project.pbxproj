@@ -17,6 +17,8 @@
 		8D1970462B2A8CB300A52AD0 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970452B2A8CB300A52AD0 /* Results.swift */; };
 		8D1970482B2A90A400A52AD0 /* Q3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970472B2A90A400A52AD0 /* Q3.swift */; };
 		8D19704A2B2A964D00A52AD0 /* Begin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970492B2A964D00A52AD0 /* Begin.swift */; };
+		8D1970502B2ACDE400A52AD0 /* Preahvihear-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D19704F2B2ACDE400A52AD0 /* Preahvihear-Regular.ttf */; };
+		8D1970542B2ACF0700A52AD0 /* Sniglet Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D1970532B2ACF0700A52AD0 /* Sniglet Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		8D1970452B2A8CB300A52AD0 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		8D1970472B2A90A400A52AD0 /* Q3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q3.swift; sourceTree = "<group>"; };
 		8D1970492B2A964D00A52AD0 /* Begin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Begin.swift; sourceTree = "<group>"; };
+		8D19704E2B2ACC6500A52AD0 /* Week-14-Final-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Week-14-Final-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8D19704F2B2ACDE400A52AD0 /* Preahvihear-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Preahvihear-Regular.ttf"; path = "Week 14 Final/Preahvihear-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		8D1970532B2ACF0700A52AD0 /* Sniglet Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sniglet Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 		8D1970302B2A8B8500A52AD0 /* Week 14 Final */ = {
 			isa = PBXGroup;
 			children = (
+				8D19704E2B2ACC6500A52AD0 /* Week-14-Final-Info.plist */,
 				8D1970312B2A8B8500A52AD0 /* Week_14_FinalApp.swift */,
 				8D1970332B2A8B8500A52AD0 /* ContentView.swift */,
 				8D1970452B2A8CB300A52AD0 /* Results.swift */,
@@ -71,7 +77,10 @@
 				8D1970412B2A8C6800A52AD0 /* Q2.swift */,
 				8D1970472B2A90A400A52AD0 /* Q3.swift */,
 				8D1970432B2A8C7600A52AD0 /* seasonScores.swift */,
+				8D19704B2B2ACB9000A52AD0 /* Fonts */,
 				8D1970352B2A8B8600A52AD0 /* Assets.xcassets */,
+				8D1970532B2ACF0700A52AD0 /* Sniglet Regular.ttf */,
+				8D19704F2B2ACDE400A52AD0 /* Preahvihear-Regular.ttf */,
 				8D1970372B2A8B8600A52AD0 /* Preview Content */,
 			);
 			path = "Week 14 Final";
@@ -83,6 +92,13 @@
 				8D1970382B2A8B8600A52AD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D19704B2B2ACB9000A52AD0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1970502B2ACDE400A52AD0 /* Preahvihear-Regular.ttf in Resources */,
 				8D1970392B2A8B8600A52AD0 /* Preview Assets.xcassets in Resources */,
 				8D1970362B2A8B8600A52AD0 /* Assets.xcassets in Resources */,
+				8D1970542B2ACF0700A52AD0 /* Sniglet Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +317,8 @@
 				DEVELOPMENT_TEAM = S8J5Y2GUSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Week-14-Final-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +348,8 @@
 				DEVELOPMENT_TEAM = S8J5Y2GUSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Week-14-Final-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
