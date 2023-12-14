@@ -14,6 +14,7 @@ class SeasonScores: ObservableObject {
     @Published var fallScore = 0
     @Published var winterScore = 0
     
+
     @Published var springWin = false
     @Published var summerWin = false
     @Published var fallWin = false

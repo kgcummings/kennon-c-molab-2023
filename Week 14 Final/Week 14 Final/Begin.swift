@@ -27,12 +27,15 @@ struct Begin: View {
                           .background(.red)
                           .foregroundStyle(.white)
                           .cornerRadius(60)
+                    
                 }
             }
+            .navigationBarBackButtonHidden(true)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .edgesIgnoringSafeArea(.all)
             .background(.linearGradient(colors: [.blue,.green,.yellow, .red], startPoint: .top, endPoint: .bottom))
         }.navigationViewStyle(StackNavigationViewStyle())
+        
     }
 }
 

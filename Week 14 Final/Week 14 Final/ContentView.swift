@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @EnvironmentObject var seasonScores : SeasonScores
+    
    // @State private var naviPath = NavigationPath()
     
     var body: some View {
         TabView{
             NavigationStack{
                 Begin()
-                    .navigationTitle("Home")
+                   
             }
                 Q1()
                     .tabItem {
