@@ -18,9 +18,6 @@ struct Q1: View {
             VStack{
                 VStack{
                     
-                    //    Button("Jump to random") {
-                    //         navPath.append(1)
-                    //    }
                     Text("What's the best way to wind down after a busy day?")
                         .italic()
                         .frame(width:250)
@@ -67,7 +64,7 @@ struct Q1: View {
                     })
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
-
+                    
                 }.padding(30)
                     .background(Color(.white) .opacity(0.5))
                     .cornerRadius(15)

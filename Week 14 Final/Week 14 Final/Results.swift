@@ -159,7 +159,7 @@ struct Results: View {
                     .foregroundColor(.clear)
                     .frame(width: 377, height: 325)
                     .background(
-                        Image("fallRes")
+                        Image("springRes")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 397, height: 325)
@@ -210,7 +210,7 @@ struct Results: View {
                      .foregroundColor(.clear)
                      .frame(width: 377, height: 325)
                      .background(
-                         Image("fallRes")
+                         Image("springRes")
                              .resizable()
                              .aspectRatio(contentMode: .fill)
                              .frame(width: 397, height: 325)

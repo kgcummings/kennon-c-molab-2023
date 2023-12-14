@@ -80,9 +80,7 @@ struct ViewOne: View {
             }
         }.navigationViewStyle(StackNavigationViewStyle())
             .ignoresSafeArea()
-        
-        
-        
+
         
     }
 }

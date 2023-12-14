@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var seasonScores : SeasonScores
+   // @State private var naviPath = NavigationPath()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TabView{
+            NavigationStack{
+                Begin()
+                    .navigationTitle("Home")
+            }
+                Q1()
+                    .tabItem {
+                        Label("First", systemImage: "dog")
+                    }
+                Q2()
+                    .tabItem {
+                        Label("Second", systemImage: "dog")
+                    }
+            Q3()
+                .tabItem {
+                    Label("Third", systemImage:"leaf")
+                }
+                
+            Results()
+                .tabItem { Label("Results", systemImage:"sun") }
+        }.background(.white)
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(SeasonScores())
 }

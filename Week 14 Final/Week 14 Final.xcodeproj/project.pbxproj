@@ -15,6 +15,8 @@
 		8D1970422B2A8C6800A52AD0 /* Q2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970412B2A8C6800A52AD0 /* Q2.swift */; };
 		8D1970442B2A8C7600A52AD0 /* seasonScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970432B2A8C7600A52AD0 /* seasonScores.swift */; };
 		8D1970462B2A8CB300A52AD0 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970452B2A8CB300A52AD0 /* Results.swift */; };
+		8D1970482B2A90A400A52AD0 /* Q3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970472B2A90A400A52AD0 /* Q3.swift */; };
+		8D19704A2B2A964D00A52AD0 /* Begin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970492B2A964D00A52AD0 /* Begin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		8D1970412B2A8C6800A52AD0 /* Q2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2.swift; sourceTree = "<group>"; };
 		8D1970432B2A8C7600A52AD0 /* seasonScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seasonScores.swift; sourceTree = "<group>"; };
 		8D1970452B2A8CB300A52AD0 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		8D1970472B2A90A400A52AD0 /* Q3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q3.swift; sourceTree = "<group>"; };
+		8D1970492B2A964D00A52AD0 /* Begin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Begin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,10 @@
 				8D1970312B2A8B8500A52AD0 /* Week_14_FinalApp.swift */,
 				8D1970332B2A8B8500A52AD0 /* ContentView.swift */,
 				8D1970452B2A8CB300A52AD0 /* Results.swift */,
+				8D1970492B2A964D00A52AD0 /* Begin.swift */,
 				8D19703F2B2A8C4C00A52AD0 /* Q1.swift */,
 				8D1970412B2A8C6800A52AD0 /* Q2.swift */,
+				8D1970472B2A90A400A52AD0 /* Q3.swift */,
 				8D1970432B2A8C7600A52AD0 /* seasonScores.swift */,
 				8D1970352B2A8B8600A52AD0 /* Assets.xcassets */,
 				8D1970372B2A8B8600A52AD0 /* Preview Content */,
@@ -150,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1970462B2A8CB300A52AD0 /* Results.swift in Sources */,
+				8D1970482B2A90A400A52AD0 /* Q3.swift in Sources */,
 				8D1970342B2A8B8500A52AD0 /* ContentView.swift in Sources */,
+				8D19704A2B2A964D00A52AD0 /* Begin.swift in Sources */,
 				8D1970322B2A8B8500A52AD0 /* Week_14_FinalApp.swift in Sources */,
 				8D1970422B2A8C6800A52AD0 /* Q2.swift in Sources */,
 				8D1970442B2A8C7600A52AD0 /* seasonScores.swift in Sources */,

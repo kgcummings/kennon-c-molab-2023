@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct Q2: View {
+    @EnvironmentObject var seasonScores : SeasonScores
+    
+    var buttonColors: [Color] = [.green,.orange, .pink, .blue]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            VStack{
+                
+                Text("What's your favorite animal?")
+                    .italic()
+                    .frame(width:250)
+                    .multilineTextAlignment(.center)
+                
+                Button("Drink a hot beverage.", action: seasonScores.winterAnswer)
+                    .buttonStyle(.borderedProminent)
+                    .tint(buttonColors.randomElement())
+               
+            }
+        }
     }
 }
 
 #Preview {
     Q2()
+        .environmentObject(SeasonScores())
 }
