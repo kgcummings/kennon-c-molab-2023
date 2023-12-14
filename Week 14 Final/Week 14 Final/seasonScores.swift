@@ -14,11 +14,6 @@ class SeasonScores: ObservableObject {
     @Published var fallScore = 0
     @Published var winterScore = 0
     
-
-    @Published var springWin = false
-    @Published var summerWin = false
-    @Published var fallWin = false
-    @Published var winterWin = false
     
     init() {
         print("SeasonScores init")
@@ -46,6 +41,14 @@ class SeasonScores: ObservableObject {
         print("Winter!")
         winterScore += 1
         print(winterScore)
+    }
+    
+    func scoresReset() {
+      springScore = 0
+    winterScore = 0
+        summerScore = 0
+        fallScore = 0
+        print("Scores Reset!")
     }
     
     struct SeasonWins {

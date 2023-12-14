@@ -27,7 +27,7 @@ struct Q1: View {
                            action:
                             {
                         seasonScores.fallAnswer()
-                        naviPath.append(1)
+                     //   naviPath.append(1)
                     })
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
@@ -38,7 +38,7 @@ struct Q1: View {
                            action:
                             {
                         seasonScores.springAnswer()
-                        naviPath.append(1)
+                     //   naviPath.append(1)
                     })
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
@@ -49,7 +49,7 @@ struct Q1: View {
                            action:
                             {
                         seasonScores.summerAnswer()
-                        naviPath.append(1)
+                      //  naviPath.append(1)
                     })
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
@@ -60,10 +60,18 @@ struct Q1: View {
                            action:
                             {
                         seasonScores.winterAnswer()
-                        naviPath.append(1)
+                     //   naviPath.append(1)
                     })
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
+                    
+                    NavigationLink(destination: Q2()) {
+                                        Text("Next Question!")
+                                    }
+                        .padding(7)
+                        .background(Color("tempAc"))
+                        .foregroundStyle(.white)
+                        .cornerRadius(60)
                     
                 }.padding(30)
                     .background(Color(.white) .opacity(0.5))

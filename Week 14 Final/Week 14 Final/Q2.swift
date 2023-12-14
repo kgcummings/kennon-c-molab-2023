@@ -37,8 +37,13 @@ struct Q2: View {
                     .buttonStyle(.borderedProminent)
                     .tint(buttonColors.randomElement())
                 
-                
-               
+                NavigationLink(destination: Q3()) {
+                                    Text("Next Question!")
+                                }
+                .padding(7)
+                .background(Color("tempAc"))
+                .foregroundStyle(.white)
+                .cornerRadius(60)
             }.padding(30)
                 .background(Color(.white) .opacity(0.5))
             .cornerRadius(15)

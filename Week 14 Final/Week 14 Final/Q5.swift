@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Q3: View {
+struct Q5: View {
     @EnvironmentObject var seasonScores : SeasonScores
     @State private var navPath = NavigationPath()
     
@@ -18,36 +18,36 @@ struct Q3: View {
             VStack{
                 VStack{
                 //    Image(systemName: "leaf.fill")
-                    Text("What do you value most in a friend?")
+                    Text("Pick your favorite planet!")
                         .font(.custom("Preahvihear-Regular", size: 18))
                         .frame(width:200)
                         .multilineTextAlignment(.center)
                     
-                    Button("Thoughtfulness.", action: seasonScores.winterAnswer)
+                    Button("Saturn", action: seasonScores.fallAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
                     
                     
-                    Button("A keen mind.", action: seasonScores.fallAnswer)
+                    Button("Uranus", action: seasonScores.winterAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
                     
                     
-                    Button("Adaptability!", action: seasonScores.springAnswer)
+                    Button("Earth", action: seasonScores.springAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
                     
                     
                     
-                    Button("A good sense of humor!", action: seasonScores.summerAnswer)
+                    Button("Jupiter", action: seasonScores.summerAnswer)
                         .buttonStyle(.borderedProminent)
                         .tint(buttonColors.randomElement())
                     
-                    NavigationLink(destination: Q4()) {
-                                        Text("Next Question!")
+                    NavigationLink(destination: Results()) {
+                                        Text("Get your results!")
                                     }
                     .padding(7)
                     .background(Color("tempAc"))
@@ -61,7 +61,7 @@ struct Q3: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .edgesIgnoringSafeArea(.all)
-            .background(.linearGradient(colors: [.orange,.yellow,.green], startPoint: .top, endPoint: .bottom))
+            .background(.linearGradient(colors: [.purple,.green,.blue, .mint], startPoint: .top, endPoint: .bottom))
             
         }.navigationViewStyle(StackNavigationViewStyle())
             .ignoresSafeArea()
@@ -72,6 +72,6 @@ struct Q3: View {
 }
 
 #Preview {
-    Q3()
+    Q5()
         .environmentObject(SeasonScores())
 }

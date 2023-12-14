@@ -19,21 +19,26 @@ struct ContentView: View {
                 Begin()
                    
             }
-                Q1()
-                    .tabItem {
-                        Label("First", systemImage: "dog")
-                    }
-                Q2()
-                    .tabItem {
-                        Label("Second", systemImage: "dog")
-                    }
-            Q3()
-                .tabItem {
-                    Label("Third", systemImage:"leaf")
-                }
-                
-            Results()
-                .tabItem { Label("Results", systemImage:"sun") }
+//                Q1()
+//                    .tabItem {
+//                        Label("First", systemImage: "circle.fill")
+//                    }
+//                Q2()
+//                    .tabItem {
+//                        Label("Second", systemImage: "circle.fill")
+//                    }
+//            Q3()
+//                .tabItem {
+//                    Label("Third", systemImage:"circle.fill")
+//                }
+//            
+//            Q4()
+//                .tabItem {
+//                    Label("Fourth", systemImage:"circle.fill")
+//                }
+//                
+//            Results()
+//                .tabItem { Label("Results", systemImage:"sun") }
         }.background(.white)
     }
 }
