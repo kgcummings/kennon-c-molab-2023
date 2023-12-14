@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SprResults: View {
+struct Results: View {
     
  
 
@@ -159,7 +159,7 @@ struct SprResults: View {
                     .foregroundColor(.clear)
                     .frame(width: 377, height: 325)
                     .background(
-                        Image("springRes")
+                        Image("fallRes")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 397, height: 325)
@@ -210,7 +210,7 @@ struct SprResults: View {
                      .foregroundColor(.clear)
                      .frame(width: 377, height: 325)
                      .background(
-                         Image("springRes")
+                         Image("fallRes")
                              .resizable()
                              .aspectRatio(contentMode: .fill)
                              .frame(width: 397, height: 325)
@@ -229,6 +229,6 @@ struct SprResults: View {
 }
     
     #Preview {
-        SprResults()
+        Results()
            .environmentObject(SeasonScores())
     }

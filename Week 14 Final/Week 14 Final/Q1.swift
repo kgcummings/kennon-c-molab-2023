@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ViewOne: View {
+struct Q1: View {
     @EnvironmentObject var seasonScores : SeasonScores
     @State private var naviPath = NavigationPath()
     
@@ -76,7 +76,7 @@ struct ViewOne: View {
             .edgesIgnoringSafeArea(.all)
             .background(.linearGradient(colors: [.white,.blue,.purple], startPoint: .top, endPoint: .bottom))
             .navigationDestination(for: Int.self) { i in
-                ViewTwo()
+                Q2()
             }
         }.navigationViewStyle(StackNavigationViewStyle())
             .ignoresSafeArea()
@@ -88,6 +88,6 @@ struct ViewOne: View {
 }
 
 #Preview {
-    ViewOne()
+    Q1()
         .environmentObject(SeasonScores())
 }

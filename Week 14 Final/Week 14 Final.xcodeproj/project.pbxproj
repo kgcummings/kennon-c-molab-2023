@@ -7,34 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D1381A92B219CEB00462445 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1381A82B219CEB00462445 /* ViewTwo.swift */; };
-		8D41E2BA2B18ED5D00BD03AB /* SeasonScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41E2B92B18ED5D00BD03AB /* SeasonScores.swift */; };
-		8D4A85372B2229940037B04C /* ViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A85362B2229940037B04C /* ViewOne.swift */; };
-		8D4A85392B222CFE0037B04C /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A85382B222CFE0037B04C /* homeView.swift */; };
-		8D4A853B2B22318A0037B04C /* ViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4A853A2B22318A0037B04C /* ViewThree.swift */; };
-		8DBA633E2B28CDEF00BC66C7 /* SprResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA633D2B28CDEF00BC66C7 /* SprResults.swift */; };
-		8DFE467B2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE467A2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift */; };
-		8DFE467D2AFAC3FE00785F46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFE467C2AFAC3FE00785F46 /* ContentView.swift */; };
-		8DFE467F2AFAC3FF00785F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFE467E2AFAC3FF00785F46 /* Assets.xcassets */; };
-		8DFE46822AFAC3FF00785F46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFE46812AFAC3FF00785F46 /* Preview Assets.xcassets */; };
+		8D1970322B2A8B8500A52AD0 /* Week_14_FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970312B2A8B8500A52AD0 /* Week_14_FinalApp.swift */; };
+		8D1970342B2A8B8500A52AD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970332B2A8B8500A52AD0 /* ContentView.swift */; };
+		8D1970362B2A8B8600A52AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1970352B2A8B8600A52AD0 /* Assets.xcassets */; };
+		8D1970392B2A8B8600A52AD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1970382B2A8B8600A52AD0 /* Preview Assets.xcassets */; };
+		8D1970402B2A8C4C00A52AD0 /* Q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19703F2B2A8C4C00A52AD0 /* Q1.swift */; };
+		8D1970422B2A8C6800A52AD0 /* Q2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970412B2A8C6800A52AD0 /* Q2.swift */; };
+		8D1970442B2A8C7600A52AD0 /* seasonScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970432B2A8C7600A52AD0 /* seasonScores.swift */; };
+		8D1970462B2A8CB300A52AD0 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1970452B2A8CB300A52AD0 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D1381A82B219CEB00462445 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
-		8D41E2B92B18ED5D00BD03AB /* SeasonScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonScores.swift; sourceTree = "<group>"; };
-		8D4A85362B2229940037B04C /* ViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOne.swift; sourceTree = "<group>"; };
-		8D4A85382B222CFE0037B04C /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
-		8D4A853A2B22318A0037B04C /* ViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThree.swift; sourceTree = "<group>"; };
-		8DBA633D2B28CDEF00BC66C7 /* SprResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprResults.swift; sourceTree = "<group>"; };
-		8DFE46772AFAC3FE00785F46 /* WEEK 9 FINALPROJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WEEK 9 FINALPROJ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DFE467A2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEEK_9_FINALPROJApp.swift; sourceTree = "<group>"; };
-		8DFE467C2AFAC3FE00785F46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8DFE467E2AFAC3FF00785F46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8DFE46812AFAC3FF00785F46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D19702E2B2A8B8500A52AD0 /* Week 14 Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 14 Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1970312B2A8B8500A52AD0 /* Week_14_FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_14_FinalApp.swift; sourceTree = "<group>"; };
+		8D1970332B2A8B8500A52AD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D1970352B2A8B8600A52AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D1970382B2A8B8600A52AD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D19703F2B2A8C4C00A52AD0 /* Q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1.swift; sourceTree = "<group>"; };
+		8D1970412B2A8C6800A52AD0 /* Q2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2.swift; sourceTree = "<group>"; };
+		8D1970432B2A8C7600A52AD0 /* seasonScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seasonScores.swift; sourceTree = "<group>"; };
+		8D1970452B2A8CB300A52AD0 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DFE46742AFAC3FE00785F46 /* Frameworks */ = {
+		8D19702B2B2A8B8500A52AD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +40,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8DFE466E2AFAC3FE00785F46 = {
+		8D1970252B2A8B8500A52AD0 = {
 			isa = PBXGroup;
 			children = (
-				8DFE46792AFAC3FE00785F46 /* WEEK 9 FINALPROJ */,
-				8DFE46782AFAC3FE00785F46 /* Products */,
+				8D1970302B2A8B8500A52AD0 /* Week 14 Final */,
+				8D19702F2B2A8B8500A52AD0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8DFE46782AFAC3FE00785F46 /* Products */ = {
+		8D19702F2B2A8B8500A52AD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DFE46772AFAC3FE00785F46 /* WEEK 9 FINALPROJ.app */,
+				8D19702E2B2A8B8500A52AD0 /* Week 14 Final.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8DFE46792AFAC3FE00785F46 /* WEEK 9 FINALPROJ */ = {
+		8D1970302B2A8B8500A52AD0 /* Week 14 Final */ = {
 			isa = PBXGroup;
 			children = (
-				8DFE467A2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift */,
-				8DFE467C2AFAC3FE00785F46 /* ContentView.swift */,
-				8DBA633D2B28CDEF00BC66C7 /* SprResults.swift */,
-				8D4A85382B222CFE0037B04C /* homeView.swift */,
-				8D4A85362B2229940037B04C /* ViewOne.swift */,
-				8D1381A82B219CEB00462445 /* ViewTwo.swift */,
-				8D4A853A2B22318A0037B04C /* ViewThree.swift */,
-				8D41E2B92B18ED5D00BD03AB /* SeasonScores.swift */,
-				8DFE467E2AFAC3FF00785F46 /* Assets.xcassets */,
-				8DFE46802AFAC3FF00785F46 /* Preview Content */,
+				8D1970312B2A8B8500A52AD0 /* Week_14_FinalApp.swift */,
+				8D1970332B2A8B8500A52AD0 /* ContentView.swift */,
+				8D1970452B2A8CB300A52AD0 /* Results.swift */,
+				8D19703F2B2A8C4C00A52AD0 /* Q1.swift */,
+				8D1970412B2A8C6800A52AD0 /* Q2.swift */,
+				8D1970432B2A8C7600A52AD0 /* seasonScores.swift */,
+				8D1970352B2A8B8600A52AD0 /* Assets.xcassets */,
+				8D1970372B2A8B8600A52AD0 /* Preview Content */,
 			);
-			path = "WEEK 9 FINALPROJ";
+			path = "Week 14 Final";
 			sourceTree = "<group>";
 		};
-		8DFE46802AFAC3FF00785F46 /* Preview Content */ = {
+		8D1970372B2A8B8600A52AD0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				8DFE46812AFAC3FF00785F46 /* Preview Assets.xcassets */,
+				8D1970382B2A8B8600A52AD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,39 +82,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DFE46762AFAC3FE00785F46 /* WEEK 9 FINALPROJ */ = {
+		8D19702D2B2A8B8500A52AD0 /* Week 14 Final */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DFE46852AFAC3FF00785F46 /* Build configuration list for PBXNativeTarget "WEEK 9 FINALPROJ" */;
+			buildConfigurationList = 8D19703C2B2A8B8600A52AD0 /* Build configuration list for PBXNativeTarget "Week 14 Final" */;
 			buildPhases = (
-				8DFE46732AFAC3FE00785F46 /* Sources */,
-				8DFE46742AFAC3FE00785F46 /* Frameworks */,
-				8DFE46752AFAC3FE00785F46 /* Resources */,
+				8D19702A2B2A8B8500A52AD0 /* Sources */,
+				8D19702B2B2A8B8500A52AD0 /* Frameworks */,
+				8D19702C2B2A8B8500A52AD0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "WEEK 9 FINALPROJ";
-			productName = "WEEK 9 FINALPROJ";
-			productReference = 8DFE46772AFAC3FE00785F46 /* WEEK 9 FINALPROJ.app */;
+			name = "Week 14 Final";
+			productName = "Week 14 Final";
+			productReference = 8D19702E2B2A8B8500A52AD0 /* Week 14 Final.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8DFE466F2AFAC3FE00785F46 /* Project object */ = {
+		8D1970262B2A8B8500A52AD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					8DFE46762AFAC3FE00785F46 = {
+					8D19702D2B2A8B8500A52AD0 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 8DFE46722AFAC3FE00785F46 /* Build configuration list for PBXProject "WEEK 9 FINALPROJ" */;
+			buildConfigurationList = 8D1970292B2A8B8500A52AD0 /* Build configuration list for PBXProject "Week 14 Final" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +122,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 8DFE466E2AFAC3FE00785F46;
-			productRefGroup = 8DFE46782AFAC3FE00785F46 /* Products */;
+			mainGroup = 8D1970252B2A8B8500A52AD0;
+			productRefGroup = 8D19702F2B2A8B8500A52AD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DFE46762AFAC3FE00785F46 /* WEEK 9 FINALPROJ */,
+				8D19702D2B2A8B8500A52AD0 /* Week 14 Final */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8DFE46752AFAC3FE00785F46 /* Resources */ = {
+		8D19702C2B2A8B8500A52AD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DFE46822AFAC3FF00785F46 /* Preview Assets.xcassets in Resources */,
-				8DFE467F2AFAC3FF00785F46 /* Assets.xcassets in Resources */,
+				8D1970392B2A8B8600A52AD0 /* Preview Assets.xcassets in Resources */,
+				8D1970362B2A8B8600A52AD0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8DFE46732AFAC3FE00785F46 /* Sources */ = {
+		8D19702A2B2A8B8500A52AD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D41E2BA2B18ED5D00BD03AB /* SeasonScores.swift in Sources */,
-				8D4A853B2B22318A0037B04C /* ViewThree.swift in Sources */,
-				8DBA633E2B28CDEF00BC66C7 /* SprResults.swift in Sources */,
-				8D1381A92B219CEB00462445 /* ViewTwo.swift in Sources */,
-				8DFE467D2AFAC3FE00785F46 /* ContentView.swift in Sources */,
-				8DFE467B2AFAC3FE00785F46 /* WEEK_9_FINALPROJApp.swift in Sources */,
-				8D4A85372B2229940037B04C /* ViewOne.swift in Sources */,
-				8D4A85392B222CFE0037B04C /* homeView.swift in Sources */,
+				8D1970462B2A8CB300A52AD0 /* Results.swift in Sources */,
+				8D1970342B2A8B8500A52AD0 /* ContentView.swift in Sources */,
+				8D1970322B2A8B8500A52AD0 /* Week_14_FinalApp.swift in Sources */,
+				8D1970422B2A8C6800A52AD0 /* Q2.swift in Sources */,
+				8D1970442B2A8C7600A52AD0 /* seasonScores.swift in Sources */,
+				8D1970402B2A8C4C00A52AD0 /* Q1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8DFE46832AFAC3FF00785F46 /* Debug */ = {
+		8D19703A2B2A8B8600A52AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		8DFE46842AFAC3FF00785F46 /* Release */ = {
+		8D19703B2B2A8B8600A52AD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,14 +280,14 @@
 			};
 			name = Release;
 		};
-		8DFE46862AFAC3FF00785F46 /* Debug */ = {
+		8D19703D2B2A8B8600A52AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WEEK 9 FINALPROJ/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Week 14 Final/Preview Content\"";
 				DEVELOPMENT_TEAM = S8J5Y2GUSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Comm.Kennon.WEEK-9-FINALPROJ";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comm.Kennon.Week-14-Final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,14 +309,14 @@
 			};
 			name = Debug;
 		};
-		8DFE46872AFAC3FF00785F46 /* Release */ = {
+		8D19703E2B2A8B8600A52AD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WEEK 9 FINALPROJ/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Week 14 Final/Preview Content\"";
 				DEVELOPMENT_TEAM = S8J5Y2GUSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -338,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Comm.Kennon.WEEK-9-FINALPROJ";
+				PRODUCT_BUNDLE_IDENTIFIER = "Comm.Kennon.Week-14-Final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DFE46722AFAC3FE00785F46 /* Build configuration list for PBXProject "WEEK 9 FINALPROJ" */ = {
+		8D1970292B2A8B8500A52AD0 /* Build configuration list for PBXProject "Week 14 Final" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DFE46832AFAC3FF00785F46 /* Debug */,
-				8DFE46842AFAC3FF00785F46 /* Release */,
+				8D19703A2B2A8B8600A52AD0 /* Debug */,
+				8D19703B2B2A8B8600A52AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DFE46852AFAC3FF00785F46 /* Build configuration list for PBXNativeTarget "WEEK 9 FINALPROJ" */ = {
+		8D19703C2B2A8B8600A52AD0 /* Build configuration list for PBXNativeTarget "Week 14 Final" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DFE46862AFAC3FF00785F46 /* Debug */,
-				8DFE46872AFAC3FF00785F46 /* Release */,
+				8D19703D2B2A8B8600A52AD0 /* Debug */,
+				8D19703E2B2A8B8600A52AD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8DFE466F2AFAC3FE00785F46 /* Project object */;
+	rootObject = 8D1970262B2A8B8500A52AD0 /* Project object */;
 }
