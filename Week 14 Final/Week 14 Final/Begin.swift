@@ -23,7 +23,7 @@ struct Begin: View {
                 NavigationLink {
                     Q1()
                 } label: {
-                    Text("Press this!")
+                    Text("Lets Begin!")
                         .font(.custom("Preahvihear-Regular", size: 15))
                         .padding()
                           .background(.red)

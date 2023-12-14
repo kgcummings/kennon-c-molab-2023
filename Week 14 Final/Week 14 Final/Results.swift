@@ -233,6 +233,59 @@ struct Results: View {
                 } .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
                     .background(Color("WinterBG"))
+            }    else  if seasonScores.fallScore + seasonScores.winterScore + seasonScores.summerScore + seasonScores.springScore >= 5 {
+                VStack {
+                    VStack {
+                        Text("A Mix!")
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .font(.custom("Sniglet-Regular", size: 35))
+                        
+                        Text("Oh, wow! You're such a wonderfully unique person, you've ended up with multiple seasons at once! Maybe that means you're a treat to be around year-round :)")
+                            .multilineTextAlignment(.center)
+                            .minimumScaleFactor(0.01)
+                    }
+                    .foregroundColor(Color(.white))
+                        .frame(width: 307, height: 118, alignment: .topLeading)
+                        .background(
+                            Rectangle()
+                                .foregroundColor(.clear)
+                                .frame(width: 381, height: 186)
+                                .background(Color("tempAc"))
+                                .cornerRadius(56)
+                        )
+                    
+                        .padding(30)
+                    
+                    
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 377, height: 325)
+                        .background(
+                            Image("tempRes")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 397, height: 325)
+                                .clipped()
+                        )
+                        .cornerRadius(36)
+                        .padding(20)
+                    
+                    NavigationLink(destination: Begin()){
+                        Text("Try again?")
+                        
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        seasonScores.scoresReset()
+                    })
+                    .padding(7)
+                    .background(Color("tempAc"))
+                    .foregroundStyle(.white)
+                    .cornerRadius(60)
+                   
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                   .edgesIgnoringSafeArea(.all)
+                   .background(Color("tempBG"))
+                
             }  else  {
                 VStack {
                     VStack {
